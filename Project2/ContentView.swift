@@ -10,12 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingAlert = false
     var body: some View {
-        Button("Show Alert") {
-            self.showingAlert = true
-        }
-        .alert(isPresented: $showingAlert, content: {
-            Alert(title: Text("Hello SwiftUI"), message: Text("This is a detail message."), dismissButton: .default(Text("Dismiss")))
-        })
+        Text("Guess the Flag")
     }
 }
 
